@@ -1,1 +1,5 @@
-from application.db.people import *
+from main import *
+
+calculate_salary()
+get_employees()
+print(datetime.now())
