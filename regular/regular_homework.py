@@ -59,7 +59,7 @@ def duplicates():
 
 if __name__ == '__main__':
 
-    with open("phonebook_raw.csv", encoding="utf-8", newline='') as f:
+    with open("regular\\phonebook_raw.csv", encoding="utf-8", newline='') as f:
         rows = csv.reader(f, delimiter=",")
         contacts_list = list(rows)
         new_list = []
@@ -67,6 +67,6 @@ if __name__ == '__main__':
         phone_change(contacts_list)
         duplicates()
 
-    with open("phonebook.csv", "w", encoding="utf-8") as f:
+    with open("regular\\phonebook.csv", "w", encoding="utf-8") as f:
         datawriter = csv.writer(f, delimiter=',')
         datawriter.writerows(new_list)
